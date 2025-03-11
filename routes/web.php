@@ -6,7 +6,7 @@ use App\Http\Middleware\IsAdminMiddleware;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); 
 });
 
 Route::get('/dashboard', function () {
