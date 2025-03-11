@@ -21,5 +21,9 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('password'),
             'is_admin' => true,
         ]);
+
+        $this->call([
+                VastgoedSeeder::class,
+        ]);
     }
 }
