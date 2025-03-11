@@ -19,21 +19,21 @@ class VastgoedSeeder extends Seeder
                 'titel' => 'Huis',
                 'omschrijving' => 'Dit is huis 1',
                 'type' => 'eenpersoonskamer',   
-                'prijs' => '$2',
+                'prijs' => '124315',
                 'locatie' => 'hoofddorp'    
             ],
             [
                 'titel' => 'Huis 2',
                 'omschrijving' => 'Dit is huis 2',
                 'type' => 'gezinswoning',      
-                'prijs' => '$2',
+                'prijs' => '13456',
                 'locatie' => 'hoofddorp' 
             ],
             [
                 'titel' => 'Huis 3',
                 'omschrijving' => 'Dit is huis 3',
                 'type' => 'villa',
-                'prijs' => '$2',
+                'prijs' => '76546',
                 'locatie' => 'hoofddorp'
             ],
         ];
