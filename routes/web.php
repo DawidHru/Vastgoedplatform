@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\VastgoedController;
+use App\Http\Controllers\UsersControler;
 use App\Http\Middleware\IsAdminMiddleware;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,13 @@ Route::name("vastgoed.")->group(function(){
         Route::get('/edit/{vastgoed}',  [VastgoedController::class, 'edit'])->middleware(IsAdminMiddleware::class)->name('edit');
         Route::put('/update/{vastgoed}',[VastgoedController::class, 'update'])->name('update'); // Fixed to use PUT
         Route::delete('/{vastgoed}',    [VastgoedController::class, 'destroy'])->middleware(IsAdminMiddleware::class)->name('destroy');
+    });
+});
+
+Route::name("users.")->group(function(){
+    
+    Route::prefix("users")->group(function(){        
+        Route::get('/',                 [UsersControler::class, 'index'])->name('index');
     });
 });
 
